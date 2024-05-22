@@ -1,0 +1,11 @@
+- As an authenticated user, I should be able to get a task by ID
+- As an authenticated user, I should be able to add a task
+- As an authenticated user, I should be able to edit a task
+- As an authenticated user, I should be able to mark a task as complete
+- As an authenticated user, I should be able to
+
+- As an administrator, I should be able to delete a task
+-
+
+- As an un-authenticated user I should be able to view a list of all tasks
+-
