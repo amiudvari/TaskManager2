@@ -9,14 +9,15 @@ CREATE TABLE task (
 );
 
 CREATE TABLE users (
-username varchar(250) PRIMARY KEY,
-password varchar (255) NOT NULL
+	username varchar(250) PRIMARY KEY,
+	password varchar (255) 
 );
 
 CREATE TABLE roles(
-	username varchar(250) references users,
+	username varchar(250),
 	role varchar(250) NOT NULL,
-	PRIMARY KEY (username, role)
+	PRIMARY KEY (username, role),
+	FOREIGN KEY (username) REFERENCES users(username) ON DELETE CASCADE
 );
 
 INSERT INTO task (task_name, priority, due_date, completed)
@@ -29,7 +30,15 @@ INSERT INTO task (task_name, priority, due_date, completed)
 VALUES ('Test Task', 'High', '2024-05-21', false);
 
 INSERT INTO users(username, password)
-VALUES ('admin', '');
+VALUES ('admin', '$2a$10$9cWTb5cC90z0GAqHFzYBlOax5kYv9U/7cDAxBBOnCrv7BSA0HsTPi');
 
 INSERT INTO roles (username, role) 
 VALUES ('admin', 'ADMIN');
+
+
+INSERT INTO users (username, password)
+VALUES ('test', '$2a$10$FvhoMEdUf.FrQ23g53gqmeqX/3QlJGF/P3AouwF0vuAHhTihP4pQS');
+
+INSERT INTO roles (username, role) 
+VALUES ('test', 'USER')
+

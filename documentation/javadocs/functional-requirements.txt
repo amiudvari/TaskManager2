@@ -1,11 +1,28 @@
-- As an authenticated user, I should be able to get a task by ID
-- As an authenticated user, I should be able to add a task
-- As an authenticated user, I should be able to edit a task
-- As an authenticated user, I should be able to mark a task as complete
-- As an authenticated user, I should be able to
+- No functions should be accessible without logging in.
 
-- As an administrator, I should be able to delete a task
--
+- An authenticated user should be able to get all incomplete tasks.
+- An authenticated user should be able to get a task by ID.
+- An authenticated user should be able to mark a task complete.
+- An authenticated user should be able to get all completed tasks.
+- An authenticated user should be able to get tasks by name.
+- An authenticated user should be able to get tasks by priority.
+- An authenticated user should be able to get all high priority tasks.
 
-- As an un-authenticated user I should be able to view a list of all tasks
--
+- An administrator should be able to get all incomplete tasks.
+- An administrator should be able to get a task by ID.
+- An administrator should be able to mark a task complete.
+- An administrator should be able to get all completed tasks.
+- An administrator should be able to get tasks by name.
+- An administrator should be able to get tasks by priority.
+- An administrator should be able to get all high priority tasks.
+- An administrator should be able to add tasks.
+- An administrator should be able to update tasks.
+- An administrator should be able to delete tasks.
+- An administrator should be able to get a list of all users.
+- An administrator should be able to get a single user.
+- An administrator should be able to create a new user.
+- An administrator should be able to update a user.
+- An administrator should be able to delete a user.
+- An administrator should be able to get roles of a user.
+- An administrator should be able to add roles to a user.
+- An administrator should be able to remove roles from a user.

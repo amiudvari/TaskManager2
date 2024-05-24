@@ -1,4 +1,4 @@
-package services;
+package com.example.TaskManager.services;
 
 import com.example.TaskManager.daos.UserDao;
 import com.example.TaskManager.models.User;
@@ -35,6 +35,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
 
         JwtUser jwtUser = new JwtUser();
+
         jwtUser.setUsername(user.getUsername());
         jwtUser.setPassword(user.getPassword());
 
